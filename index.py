@@ -63,6 +63,8 @@ def atividade5():
     print(f"{first} {second}")
 
 
+# Aqui começa outra atividade
+
 def atividade6():
     s
 
@@ -103,7 +105,7 @@ def atividade15():
     s
 
 
-choice = int(input("Escolha uma atividade: de 1 a 15:"))
+choice = int(input("Escolha uma atividade, de 1 a 15:"))
 
 if choice == 1:
     atividade1()
