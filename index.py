@@ -58,9 +58,9 @@ def atividade4():
 
 
 def atividade5():
-    part1 = "Lorem ipsum dolor sit"
-    part2 = "amet, consectetur adipis"
-    print(f"{part1} {part2}")
+    first = "Lorem ipsum dolor sit"
+    second = "amet, consectetur adipis"
+    print(f"{first} {second}")
 
 
 def atividade6():
