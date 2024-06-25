@@ -85,7 +85,10 @@ class operadores:
 
 
     def atividade3():
-        s
+        preco = float(input("Digite o preço do produto:"))
+        percentual = float(input("Digite o percentual de desconto:"))
+        valorDesconto = preco * (percentual / 100)
+        print(f"Preço: {preco}\nPercentual de desconto: {percentual}%\nValor do desconto: {valorDesconto}\nPreço final: {preco - valorDesconto}")
 
 
     def atividade4():
@@ -115,8 +118,14 @@ class operadores:
     def atividade10():
         s
 
+""" altura = float(input("Altura: "))
+peso =  float(input("peso: "))
 
-tipo = input("Escolha entre variaveis e operadores:")
+imc = peso / (altura ** 2)
+
+print(f"imc: {imc}") """
+
+tipo = input("Escolha entre atividades: variaveis ou operadores:")
 
 if tipo == "variaveis":
     choice = int(input("Escolha uma atividade de 1 a 5:"))
