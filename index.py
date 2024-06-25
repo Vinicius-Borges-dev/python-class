@@ -92,7 +92,10 @@ class operadores:
 
 
     def atividade4():
-        s
+        valorConta = float(input("Digite o valor da conta:"))
+        gorjeta = float(input("Digite o percentual da gorjeta:"))
+        valorGorjeta = valorConta * (gorjeta / 100)
+        print(f"Valor da conta: {valorConta}\nPercentual da gorjeta: {gorjeta}%\nValor da gorjeta: {valorGorjeta}\nValor final da conta com gorjeta: {valorConta + valorGorjeta}")
 
 
     def atividade5():
@@ -166,3 +169,5 @@ elif tipo == "operadores":
         operadores.atividade9()
     else:
         print("Escolha inválida. Por favor, escolha um número de 1 a 15.")
+else :
+    print("Escolha inválida. Por favor, escolha entre-> variaveis ou operadores.")
