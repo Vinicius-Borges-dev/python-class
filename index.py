@@ -99,7 +99,8 @@ class operadores:
 
 
     def atividade5():
-        s
+        valorReais = float(input("Digite um valor:"))
+        print(f"Valor em reais: {valorReais}\nValor em dólares: {round(valorReais / 5.45, 2)}")
 
 
     def atividade6():
@@ -120,6 +121,22 @@ class operadores:
 
     def atividade10():
         s
+        
+        
+    def atividade11():
+            s
+            
+            
+    def atividade12():
+            s
+            
+            
+    def atividade13():
+            s
+            
+            
+    def atividade14():
+            s
 
 """ altura = float(input("Altura: "))
 peso =  float(input("peso: "))
@@ -167,6 +184,16 @@ elif tipo == "operadores":
         operadores.atividade8()
     elif choice == 9:
         operadores.atividade9()
+    elif choice == 10:
+        operadores.atividade10()
+    elif choice == 11:
+        operadores.atividade11()
+    elif choice == 12:
+        operadores.atividade12()
+    elif choice == 13:
+        operadores.atividade13()
+    elif choice == 14:
+        operadores.atividade14()
     else:
         print("Escolha inválida. Por favor, escolha um número de 1 a 15.")
 else :
