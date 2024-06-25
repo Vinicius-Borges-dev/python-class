@@ -48,17 +48,19 @@ def atividade3():
 
 def atividade4():
     varStr = "String"
-    print(f"Primera variável: {varStr}")
+    print(f"Primeira variável: {varStr}")
     varInt = 10
     print(f"Segunda variável: {varInt}")
     varFloat = 10.3
     print(f"Terceira variável: {varFloat}")
     
-    print(f"Tipo da primeira: {type(varStr)}, tipo da segunda: {type(varInt)}, tipo da terceira: {type(varFloat)}")
+    print(f"Tipo da primeira: {type(varStr)}\nTipo da segunda: {type(varInt)}\nTipo da terceira: {type(varFloat)}")
 
 
 def atividade5():
-    s
+    part1 = "Lorem ipsum dolor sit"
+    part2 = "amet, consectetur adipis"
+    print(f"{part1} {part2}")
 
 
 def atividade6():
