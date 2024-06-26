@@ -1,24 +1,29 @@
 class variaveis:
     
     def aulaPrint():
+        print("Iniciando função aulaPrint")
         print("Hello world")
 
     def testeComFor():
+        print("Iniciando função testeComFor")
         for i in range(0, 10):
             print("Ola mundo vez:", i)
 
     def aulaMeusDados():
+        print("Iniciando função aulaMeusDados")
         print("Vinícius")
         print("Moro aqui ó 👉🌍")
         print(21)
 
     def aulaInputs():
+        print("Iniciando função aulaInputs")
         # Input para escrever o nome
         name = input("Digíte seu nome:")
         print(f"Olá, {name}")
         print("Olá, {}".format(name))
 
     def aulaPratica():
+        print("Iniciando função aulaPratica")
         nome = "Vinícius"
         idade = 21
         skills = ["frontend development", "backend development", "Design UX/UI"]
@@ -27,6 +32,7 @@ class variaveis:
         print(f"Olá, meu nome é {nome}, tenho {idade} anos\nMinhas habilidades são: {skills}\nProcuro um emprego com um salário de {salarioMin} a {SalarioMax} euros por mês")
 
     def atividade1():
+        print("Iniciando função atividade 1")
         name = input("Digite seu nome:")
         apelido = input("Digite seu apelido:")
         adress = input("Digite seu endereço:")
@@ -36,12 +42,14 @@ class variaveis:
     # atividade1()
 
     def atividade2():
+        print("Iniciando função atividade 2")
         name = input("Digite um nome:")
         year = input("Digite um ano:")
         print(f"{name} é uma valente cavaleira, nascida no ano {year}. Certa manhã, {name} acordou com um barulho terrivel: um dração se aproximava da aldeia. Somente {name} poderia salvar os moradores da aldeia")
 
 
     def atividade3():
+        print("Iniciando função atividade 3")
         city = "São Paulo"
         print(f"Antes: {city}")
         city = "Rio de Janeiro"
@@ -49,6 +57,7 @@ class variaveis:
 
 
     def atividade4():
+        print("Iniciando função atividade 4")
         varStr = "String"
         print(f"Primeira variável: {varStr}")
         varInt = 10
@@ -60,6 +69,7 @@ class variaveis:
 
 
     def atividade5():
+        print("Iniciando função atividade 5")
         first = "Lorem ipsum dolor sit"
         second = "amet, consectetur adipis"
         print(f"{first} {second}")
@@ -68,16 +78,19 @@ class variaveis:
 class operadores:
     
     def teste():
+        print("Iniciando função teste")
         ano = int(input("Digite um ano:"))
         print(f"Ao fim de 2024 voocê terá {2024 - ano}")
 
 
     def atividade6():
+        print("Iniciando função atividade 6")
         num = int(input("Digite um número:"))
         print(f"O número é {num} e ele multiplicado por 5 é {num * 5}")
 
 
     def atividade7():
+        print("Iniciando função atividade 7")
         name = input("Digite seu nome:")
         year = int(input("Digite seu ano de nascimento:"))
         
@@ -85,6 +98,7 @@ class operadores:
 
 
     def atividade8():
+        print("Iniciando função atividade 8")
         preco = float(input("Digite o preço do produto:"))
         percentual = float(input("Digite o percentual de desconto:"))
         valorDesconto = preco * (percentual / 100)
@@ -92,6 +106,7 @@ class operadores:
 
 
     def atividade9():
+        print("Iniciando função atividade 9")
         valorConta = float(input("Digite o valor da conta:"))
         gorjeta = float(input("Digite o percentual da gorjeta:"))
         valorGorjeta = valorConta * (gorjeta / 100)
@@ -99,38 +114,42 @@ class operadores:
 
 
     def atividade10():
+        print("Iniciando função atividade 10")
         valorReais = float(input("Digite um valor:"))
         const_valorDolar = 5.45
         print(f"Valor em reais: {valorReais}\nValor em dólares: {round(valorReais / const_valorDolar, 2)}")
 
 
     def atividade11():
-        s
-
+        print("Iniciando função atividade 11")
+        # Add your code here
 
     def atividade12():
-        s
-
+        print("Iniciando função atividade 12")
+        # Add your code here
 
     def atividade13():
-        s
-
+        print("Iniciando função atividade 13")
+        # Add your code here
 
     def atividade14():
-        s
+        print("Iniciando função atividade 14")
+        # Add your code here
 
 
-class testes:
+class testesPessoais:
     def atividade1():
+        print("Iniciando função atividade 1")
         nome = input("Digite seu nome: ")
-        nomeLower = nome.low()
+        nomeLower = nome.lower()
         print(f"Seu nome todo em minúsculo: {nomeLower}")
         nomeUpper = nome.upper()
         print(f"Seu nome todo em maiusculo: {nomeUpper}")
 
     def atividade2():
+        print("Iniciando função atividade 2")
         email = input("Digite seu email: ")
-        searchChar = input("Digote um caractere que você deseja encontrar no seu email")
+        searchChar = input("Digite um caractere que você deseja encontrar no seu email: ")
         foundChar = email.find(searchChar)
         if foundChar == -1:
             print("Caractere não encontrado")
@@ -138,13 +157,26 @@ class testes:
             print(f"Caractere encontrado na posição: {foundChar}")
 
     def atividade3():
+        print("Iniciando função atividade 3")
         lista = []
         listLen = len(lista)
         print(f"Essa é a lista: {lista} e ela possue tamanho de {listLen}")
         addItem = input("Adicione um item a lista: ")
         lista.append(addItem)
-        listLen
+        listLen = len(lista)
         print(f"Agora a sua lista é: {lista} e ela possue um tamanho de {listLen}")
+        
+    def atividade4():
+        print("Iniciando função atividade 4")
+        lista = ["item1", "item2", "item3"]
+        print(f"Essa é a lista: {lista}")
+        removeItem = input("Digite o item que você deseja remover: ")
+        lista.remove(removeItem)
+        print(f"Agora a sua lista é: {lista}")
+        
+
+    def atividade5():
+        s
 
 """ altura = float(input("Altura: "))
 peso =  float(input("peso: "))
@@ -154,7 +186,7 @@ imc = peso / (altura ** 2)
 print(f"imc: {imc}") """
 
 
-primeiraEscolha = int(input("Você quer testar as atividades ou meus testes pessoais\nEscolha 1 para 'atividades' ou 2 para 'testes': "))
+primeiraEscolha = int(input("Você quer testar as atividades ou meus testes pessoais?\nEscolha 1 para 'atividades' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
     choice = int(input("Escolha uma atividade de 1 a 14: "))
@@ -188,10 +220,12 @@ if primeiraEscolha == 1:
         operadores.atividade14()
         
 elif primeiraEscolha == 2:
-    choice = int(input("Escolha um teste de 1 a 3: "))
+    choice = int(input("Escolha um teste de 1 a 4: "))
     if choice == 1:
-        testes.atividade1()
+        testesPessoais.atividade1()
     elif choice == 2:
-        testes.atividade2()
+        testesPessoais.atividade2()
     elif choice == 3:
-        testes.atividade3()
+        testesPessoais.atividade3()
+    elif choice == 4:
+        testesPessoais.atividade4()
