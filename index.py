@@ -122,19 +122,25 @@ class operadores:
 
     def atividade11():
         print("Iniciando função atividade 11")
-        # Add your code here
+        capitalInicial = float(input("Digite um valor: "))
+        taxaJurosAnual = float(input("Digite a taxa de juros anual: "))
+        tempo = int(input("Digite o tempo em anos: "))
+        jurosSimples = capitalInicial * (taxaJurosAnual / 100) * tempo
+        print(f"Juros simples {jurosSimples}")
 
     def atividade12():
         print("Iniciando função atividade 12")
-        # Add your code here
+        
+
 
     def atividade13():
         print("Iniciando função atividade 13")
-        # Add your code here
+        
+
 
     def atividade14():
         print("Iniciando função atividade 14")
-        # Add your code here
+        
 
 
 class testesPessoais:
@@ -146,6 +152,7 @@ class testesPessoais:
         nomeUpper = nome.upper()
         print(f"Seu nome todo em maiusculo: {nomeUpper}")
 
+
     def atividade2():
         print("Iniciando função atividade 2")
         email = input("Digite seu email: ")
@@ -156,6 +163,7 @@ class testesPessoais:
         else:
             print(f"Caractere encontrado na posição: {foundChar}")
 
+
     def atividade3():
         print("Iniciando função atividade 3")
         lista = []
@@ -165,7 +173,8 @@ class testesPessoais:
         lista.append(addItem)
         listLen = len(lista)
         print(f"Agora a sua lista é: {lista} e ela possue um tamanho de {listLen}")
-        
+
+
     def atividade4():
         print("Iniciando função atividade 4")
         lista = ["item1", "item2", "item3"]
@@ -173,10 +182,11 @@ class testesPessoais:
         removeItem = input("Digite o item que você deseja remover: ")
         lista.remove(removeItem)
         print(f"Agora a sua lista é: {lista}")
-        
+
 
     def atividade5():
         s
+
 
 """ altura = float(input("Altura: "))
 peso =  float(input("peso: "))
@@ -218,7 +228,7 @@ if primeiraEscolha == 1:
         operadores.atividade13()
     elif choice == 14:
         operadores.atividade14()
-        
+
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
     if choice == 1:
