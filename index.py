@@ -130,7 +130,12 @@ class operadores:
 
     def atividade12():
         print("Iniciando função atividade 12")
-        
+        num1 = float(input("Primeiro número: "))
+        num2 = float(input("Segundo número: "))
+        num3 = float(input("Terceiro número: "))
+        soma = num1 + num2 + num3
+        media = soma / 3
+        print(f"Soma: {soma}\nMédia: {media}")
 
 
     def atividade13():
