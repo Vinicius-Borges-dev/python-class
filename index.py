@@ -72,72 +72,52 @@ class operadores:
         print(f"Ao fim de 2024 voocê terá {2024 - ano}")
 
 
-    def atividade1():
+    def atividade6():
         num = int(input("Digite um número:"))
         print(f"O número é {num} e ele multiplicado por 5 é {num * 5}")
 
 
-    def atividade2():
+    def atividade7():
         name = input("Digite seu nome:")
         year = int(input("Digite seu ano de nascimento:"))
         
         print(f"Nome: {name}\nIdade: {year} anos\nOlá {name}, você terá {2024 - year} anos no final do ano de 2024")
 
 
-    def atividade3():
+    def atividade8():
         preco = float(input("Digite o preço do produto:"))
         percentual = float(input("Digite o percentual de desconto:"))
         valorDesconto = preco * (percentual / 100)
         print(f"Preço: {preco}\nPercentual de desconto: {percentual}%\nValor do desconto: {valorDesconto}\nPreço final: {preco - valorDesconto}")
 
 
-    def atividade4():
+    def atividade9():
         valorConta = float(input("Digite o valor da conta:"))
         gorjeta = float(input("Digite o percentual da gorjeta:"))
         valorGorjeta = valorConta * (gorjeta / 100)
         print(f"Valor da conta: {valorConta}\nPercentual da gorjeta: {gorjeta}%\nValor da gorjeta: {valorGorjeta}\nValor final da conta com gorjeta: {valorConta + valorGorjeta}")
 
 
-    def atividade5():
+    def atividade10():
         valorReais = float(input("Digite um valor:"))
         const_valorDolar = 5.45
         print(f"Valor em reais: {valorReais}\nValor em dólares: {round(valorReais / const_valorDolar, 2)}")
 
 
-    def atividade6():
-        s
-
-
-    def atividade7():
-        s
-
-
-    def atividade8():
-        s
-
-
-    def atividade9():
-        s
-
-
-    def atividade10():
-        s
-        
-        
     def atividade11():
-            s
-            
-            
+        s
+
+
     def atividade12():
-            s
-            
-            
+        s
+
+
     def atividade13():
-            s
-            
-            
+        s
+
+
     def atividade14():
-            s
+        s
 
 
 class testes:
@@ -155,7 +135,7 @@ class testes:
         if foundChar == -1:
             print("Caractere não encontrado")
         else:
-            print(f"Caractere encontrado na posição: {searchChar}")
+            print(f"Caractere encontrado na posição: {foundChar}")
 
     def atividade3():
         lista = []
@@ -174,77 +154,44 @@ imc = peso / (altura ** 2)
 print(f"imc: {imc}") """
 
 
-primeiraEscolha = input("Você quer testar as atividades ou meus testes pessoais (escolha entre: 'atividades' e 'testes' ")
+primeiraEscolha = int(input("Você quer testar as atividades ou meus testes pessoais\nEscolha 1 para 'atividades' ou 2 para 'testes': "))
 
-if primeiraEscolha == "atividades":
-    
-    tipo = input("Escolha entre atividades: variaveis ou operadores:")
-
-    if tipo == "variaveis":
-    choice = int(input("Escolha uma atividade de 1 a 5:"))
-    
-        if choice == 1:
-            variaveis.atividade1()
-        elif choice == 2:
-            variaveis.atividade2()
-        elif choice == 3:
-            variaveis.atividade3()
-        elif choice == 4:
-            variaveis.atividade4()
-        elif choice == 5:
-            variaveis.atividade5()
-        else:
-            print("Escolha inválida. Por favor, escolha um número de 1 a 15.")
-    elif tipo == "operadores":
-    
-        choice = int(input("Escolha uma atividade de 1 a 5:"))
-    
-        if choice == 1:
-            operadores.atividade1()
-        elif choice == 2:
-            operadores.atividade2()
-        elif choice == 3:
-            operadores.atividade3()
-        elif choice == 4:
-            operadores.atividade4()
-        elif choice == 5:
-            operadores.atividade5()
-        elif choice == 6:
-            operadores.atividade6()
-        elif choice == 7:
-            operadores.atividade7()
-        elif choice == 8:
-            operadores.atividade8()
-        elif choice == 9:
-            operadores.atividade9()
-        elif choice == 10:
-            operadores.atividade10()
-        elif choice == 11:
-            operadores.atividade11()
-        elif choice == 12:
-            operadores.atividade12()
-        elif choice == 13:
-            operadores.atividade13()
-        elif choice == 14:
-            operadores.atividade14()
-        else:
-            print("Escolha inválida. Por favor, escolha um número de 1 a 15.")
-    else :
-        print("Escolha inválida. Por favor, escolha entre-> variaveis ou operadores.")
-
-elif primeiraEscolha == "testes":
-    choice int(input("Escolha um número de 1 a 10"))
-
+if primeiraEscolha == 1:
+    choice = int(input("Escolha uma atividade de 1 a 14: "))
+    if choice == 1:
+        variaveis.atividade1()
+    elif choice == 2:
+        variaveis.atividade2()
+    elif choice == 3:
+        variaveis.atividade3()
+    elif choice == 4:
+        variaveis.atividade4()
+    elif choice == 5:
+        variaveis.atividade5()
+    elif choice == 6:
+        operadores.atividade6()
+    elif choice == 7:
+        operadores.atividade7()
+    elif choice == 8:
+        operadores.atividade8()
+    elif choice == 9:
+        operadores.atividade9()
+    elif choice == 10:
+        operadores.atividade10()
+    elif choice == 11:
+        operadores.atividade11()
+    elif choice == 12:
+        operadores.atividade12()
+    elif choice == 13:
+        operadores.atividade13()
+    elif choice == 14:
+        operadores.atividade14()
+        
+elif primeiraEscolha == 2:
+    choice = int(input("Escolha um teste de 1 a 3: "))
     if choice == 1:
         testes.atividade1()
     elif choice == 2:
         testes.atividade2()
     elif choice == 3:
         testes.atividade3()
-    elif choice == 4:
-        testes.atividade4()
-    elif choice == 5:
-        testes.atividade5()
-
-else:
-    print("escolha inválida, tente novamente")
