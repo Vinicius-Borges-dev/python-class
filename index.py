@@ -251,6 +251,45 @@ class testesPessoais:
     def atividade5():
         s
 
+class estruturasLogicas:
+    def atividade001():
+        numero : int = int(input("Digite um número: "))
+        if numero < 0:
+            print("Número negativo")
+        elif numero > 0:
+            print("Número positivo")
+        elif numero == 0:
+            print("Número zero")
+
+    def atividade001():
+        nunm : int = int(input("Digite um número: "))
+        if numero == 1984:
+            print("Orwell")
+            
+    def atividade16():
+        numero : int = int(input("Digite um número: "))
+        if numero < 0:
+            print(f"Número {numero} é negativo\nMultiplicado por -1 é: {numero * -1}")
+        else:
+            print(f"Número {numero}")
+            
+    def atividade17():
+        name = input("Digite o nome: ")
+        if name != "Jerry":
+            numPorcao = int(input("Digite o número de porções: "))
+            precoPorcao = 5.90
+            total = numPorcao * precoPorcao
+            print(f"Total: {total}")
+    
+    def atividade18():
+        pass
+    
+    def atividade19():
+        pass
+    
+    def atividade20():
+        pass
+
 
 """ altura = float(input("Altura: "))
 peso =  float(input("peso: "))
@@ -260,10 +299,10 @@ imc = peso / (altura ** 2)
 print(f"imc: {imc}") """
 
 
-primeiraEscolha = int(input("Você quer testar as atividades ou meus testes pessoais?\nEscolha 1 para 'atividades' ou 2 para 'testes pessoais': "))
+primeiraEscolha = int(input("Você quer testar as atividades de 'Introdução ou python' ou meus testes pessoais?\nEscolha 1 para 'Introdução' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
-    choice = int(input("Escolha uma atividade de 1 a 15: "))
+    choice = int(input("Escolha uma atividade de 1 a 32: "))
     if choice == 1:
         variaveis.atividade1()
     elif choice == 2:
@@ -294,6 +333,16 @@ if primeiraEscolha == 1:
         operadores.atividade14()
     elif choice == 15:
         operadores.atividade15()
+    elif choice == 16:
+        estruturasLogicas.atividade16()
+    elif choice == 17:
+        estruturasLogicas.atividade17()
+    elif choice == 18:
+        estruturasLogicas.atividade18()
+    elif choice == 19:
+        estruturasLogicas.atividade19()
+    elif choice == 20:
+        estruturasLogicas.atividade20()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
