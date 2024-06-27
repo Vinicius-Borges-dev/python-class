@@ -168,6 +168,7 @@ class operadores:
                 print("Par")
             else:
                 print("Ímpar")
+            # print(f"O número é par? Resposta: {num % 2 == 0}")
                 
         def atividade5():
             lista = [12, 10, 7, 5]
