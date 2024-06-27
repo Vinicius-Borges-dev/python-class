@@ -295,7 +295,16 @@ class estruturasLogicas:
         
     
     def atividade19():
-        pass
+        const_name = "Vinicius"
+        const_city = "Curitiba"
+        const_state = "Paraná"
+        const_cep = "12345678"
+        
+        name = input("Digite seu nome: ")
+        if name == const_name:
+            print(f"Nome: {const_name}\nCidade: {const_city}\nEstado: {const_state}\nCEP: {const_cep}")
+        else:
+            print("Esse usuário não existe em nossas bases de daddos")
     
     def atividade20():
         pass
