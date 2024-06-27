@@ -282,7 +282,17 @@ class estruturasLogicas:
             print(f"Total: {total}")
     
     def atividade18():
-        pass
+        numero = int(input("Digite um número: "))
+        if numero < 1000:
+            print("Este número é menor que 1000")
+            print("Obrigado!!")
+            if numero < 100:
+                print("Este número é menor que 100")
+                print("Obrigado!!")
+                if numero < 10:
+                    print("Este número é menor que 10")
+                    print("Obrigado!!")
+        
     
     def atividade19():
         pass
@@ -299,7 +309,7 @@ imc = peso / (altura ** 2)
 print(f"imc: {imc}") """
 
 
-primeiraEscolha = int(input("Você quer testar as atividades de 'Introdução ou python' ou meus testes pessoais?\nEscolha 1 para 'Introdução' ou 2 para 'testes pessoais': "))
+primeiraEscolha = int(input("Você quer testar as atividades de 'Atividades' ou meus 'testes pessoais'?\nEscolha 1 para 'Atividades' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
     choice = int(input("Escolha uma atividade de 1 a 32: "))
