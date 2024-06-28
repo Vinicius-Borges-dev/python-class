@@ -348,7 +348,21 @@ class estruturasLogicas:
             print(f"Bônus de 15%\n Pontos: {pontos + bonus}")
 
     def atividade24():
-        pass
+        temperatura = float(input("Qual é a previsão do tempo para amanhã? Temperatura: "))
+        chuva = input("Vai chover?(sim/não): ")
+        
+        if temperatura > 20:
+            print("Use jeans e camiseta")
+        elif temperatura > 15:
+            print("Use jeans e camiseta")
+            print("Recomendo um suéter também")
+        elif temperatura > 5:
+            print("Use jeans e camiseta")
+            print("Recomendo um suéter também")
+            
+            
+        if chuva == 'sim':
+            print("Recomendo um guarda-chuva")
 
     def atividade25():
         pass
