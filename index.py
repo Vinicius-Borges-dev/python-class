@@ -307,6 +307,65 @@ class estruturasLogicas:
             print("Esse usuário não existe em nossas bases de daddos")
     
     def atividade20():
+        num1 = float(input("Digite o 1º número: "))
+        num2 = float(input("Digite o 2º número: "))
+        operation = int(input("Escolha 1 para 'Adição', 2 para 'Subtração' ou 3 para 'Multiplicação': "))
+        if operation == 1:
+            print(f"Resultado: {num1 + num2}")
+        elif operation == 2:
+            print(f"Resultado: {num1 - num2}")
+        elif operation == 3:
+            print(f"Resultado: {num1 * num2}")
+        else:
+            print("Operação inválida")
+
+    def atividade21():
+        Fahrenheit = float(input("Digite os graus em Fahrenheit: "))
+        Celcius = (Fahrenheit - 32) * (5/9) # ou 1.8
+        
+        if Celcius < 0:
+            print(f"Faz {round(Celcius, 2)}ºC - Brr! está frio aqui!")
+        
+    def atividade22():
+        salarioHora = float(input("Digite o salário por hora: "))
+        horasTrabalhadas = float(input("Horas trabalhadas: "))
+        diaSemana = input("Digite o dia da semana: ")
+        
+        if diaSemana != "Domingo":
+            salarioDiario = salarioHora * horasTrabalhadas
+            print(f"Salario diário: {salarioDiario}")
+        else:
+            salarioDiario = (salarioHora * 2) * horasTrabalhadas
+            print(f"Salario diário: {salarioDiario}")
+            
+    def atividade23():
+        pass
+
+    def atividade24():
+        pass
+
+    def atividade25():
+        pass
+
+    def atividade26():
+        pass
+
+    def atividade27():
+        pass
+
+    def atividade28():
+        pass
+
+    def atividade29():
+        pass
+
+    def atividade30():
+        pass
+
+    def atividade31():
+        pass
+
+    def atividade32():
         pass
 
 
@@ -362,6 +421,32 @@ if primeiraEscolha == 1:
         estruturasLogicas.atividade19()
     elif choice == 20:
         estruturasLogicas.atividade20()
+    elif choice == 21:
+        estruturasLogicas.atividade21()
+    elif choice == 22:
+        estruturasLogicas.atividade22()
+    elif choice == 23:
+        estruturasLogicas.atividade23()
+    elif choice == 24:
+        estruturasLogicas.atividade24()
+    elif choice == 21:
+        estruturasLogicas.atividade21()
+    elif choice == 25:
+        estruturasLogicas.atividade25()
+    elif choice == 26:
+        estruturasLogicas.atividade26()
+    elif choice == 27:
+        estruturasLogicas.atividade27()
+    elif choice == 28:
+        estruturasLogicas.atividade28()
+    elif choice == 29:
+        estruturasLogicas.atividade29()
+    elif choice == 30:
+        estruturasLogicas.atividade30()
+    elif choice == 31:
+        estruturasLogicas.atividade31()
+    elif choice == 32:
+        estruturasLogicas.atividade32()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
