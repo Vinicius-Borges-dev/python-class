@@ -337,7 +337,7 @@ class estruturasLogicas:
         else:
             salarioDiario = (salarioHora * 2) * horasTrabalhadas
             print(f"Salario diário: {salarioDiario}")
-            
+
     def atividade23():
         pontos = float(input("Digite quantos pontos: "))
         if pontos > 100:
@@ -350,28 +350,43 @@ class estruturasLogicas:
     def atividade24():
         temperatura = float(input("Qual é a previsão do tempo para amanhã? Temperatura: "))
         chuva = input("Vai chover?(sim/não): ")
-        
+
         if temperatura > 20:
             print("Use jeans e camiseta")
-        elif temperatura > 15:
+        elif temperatura > 10:
             print("Use jeans e camiseta")
             print("Recomendo um suéter também")
         elif temperatura > 5:
             print("Use jeans e camiseta")
-            print("Recomendo um suéter também")
-            
-            
+            print("Recomendo um casaco")
+
         if chuva == 'sim':
             print("Recomendo um guarda-chuva")
 
     def atividade25():
-        pass
+        idade = int(input("Digite sua idade: "))
+        if idade >= 18:
+            print("Você é maior de idade")
+        else:
+            print("Você é menor de idade")
 
     def atividade26():
-        pass
+        nota1 = float(input("Digite a primeira nota: "))
+        nota2 = float(input("Digite a segunda nota: "))
+        media = (nota1 + nota2) / 2
+        if media >= 7:
+            print("Aprovado")
+        else:
+            print("Reprovado")
 
     def atividade27():
-        pass
+        preco = float(input("Digite o preço do produto: "))
+        if preco <= 50:
+            print("Categoria Econômica")
+        elif preco <= 100:
+            print("Categoria Intermediária")
+        else:
+            print("Categoria Premium")
 
     def atividade28():
         pass
