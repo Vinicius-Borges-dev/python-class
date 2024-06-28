@@ -339,7 +339,13 @@ class estruturasLogicas:
             print(f"Salario diário: {salarioDiario}")
             
     def atividade23():
-        pass
+        pontos = float(input("Digite quantos pontos: "))
+        if pontos > 100:
+            bonus = pontos * (10 / 100)
+            print(f"Bônus de 10%\n Pontos: {pontos + bonus}")
+        else:
+            bonus = pontos * (15 / 100)
+            print(f"Bônus de 15%\n Pontos: {pontos + bonus}")
 
     def atividade24():
         pass
