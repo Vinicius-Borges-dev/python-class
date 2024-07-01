@@ -453,6 +453,15 @@ class estruturasLogicas:
                 print(f"{name2} é mais velho")
             else:
                 print("Ambos tem a mesma idade")
+    
+    def PraticaAndOr():
+        num = int(input("Digite um número: "))
+        if num >= 5 and num <= 8:
+            print("O número está entre 5 e 8")
+            
+        num2 = int(input("Digite um número: "))
+        if num2 < 5 or num2 > 8:
+            print("O número não está entre 5 e 8")
 
     def atividade32():
         pass
