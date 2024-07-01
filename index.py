@@ -507,11 +507,21 @@ class estruturasLogicas:
             print("Impossivel")
     
     def atividade36():
-        pass
+        num = int(input("Digite um número: "))
+        if num % 3 == 0:
+            print('Fizz')
+        elif num % 5 == 0:
+            print('Buzz')
+        elif num % 3 == 0 and num % 5 == 0:
+            print('FizzBuzz')
     
     def atividade37():
-        pass
-    
+        ano = int(input("Digite um ano: "))
+        if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+            print(f"O ano {ano} é bissexto")
+        else:
+            print(f"O ano {ano} não é bissexto")
+
     def atividade38():
         pass
     
