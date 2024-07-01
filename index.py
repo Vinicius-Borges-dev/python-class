@@ -389,16 +389,64 @@ class estruturasLogicas:
             print("Categoria Premium")
 
     def atividade28():
-        pass
+        idade  = int(input("Digite a sua idade: "))
+        if idade >= 16:
+            pint("Pode votar")
+        else:
+            print("Não pode votar") 
 
     def atividade29():
-        pass
+        num = int(input("Digite um número: "))
+        if num >= 1 and num <= 12: 
+            if num == 1:
+                print("Janeiro")
+            if num == 2:
+                print("Fevereiro")
+            if num == 3:
+                print("Março")
+            if num == 4:
+                print("Abril")
+            if num == 5:
+                print("Maio")
+            if num == 6:
+                print("Junho")
+            if num == 7:
+                print("Julho")
+            if num == 8:
+                print("Agosto")
+            if num == 9:
+                print("Setembro")
+            if num == 10:
+                print("Outubro")
+            if num == 11:
+                print("Novembro")
+            if num == 12:
+                print("Dezembro")
+        else:
+            print("Mês inválido")
 
     def atividade30():
-        pass
+        num1 = int(input("Digite o primeiro número: "))
+        num2 = int(input("Digite o segundo número: "))
+        if num1 > num2:
+            print(f"{num1} é maior que {num2}")
+        elif num1 < num2:
+            print(f"{num2} é maior que {num1}")
+        else:
+            print(f"{num1} é igual a {num2}")
 
     def atividade31():
-        pass
+        name1 = input("Digite o primeiro nome: ")
+        idade1 = int(input("Digite a idade do primeiro: "))
+        name2 = input("Digite o segundo nome: ")
+        idade2 = int(input("Digite a idade do segundo: "))
+        
+        if idade1 > idade2:
+            print(f"{name1} é mais velho que {name2}")
+        elif idade1 < idade2:
+            print(f"{name2} é mais velho que {name1}")
+        else:
+            print(f"{name1} é igual a {name2}")
 
     def atividade32():
         pass
