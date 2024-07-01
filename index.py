@@ -441,14 +441,44 @@ class estruturasLogicas:
         name2 = input("Digite o segundo nome: ")
         idade2 = int(input("Digite a idade do segundo: "))
         
-        if idade1 > idade2:
-            print(f"{name1} é mais velho que {name2}")
-        elif idade1 < idade2:
-            print(f"{name2} é mais velho que {name1}")
+        if idade1 > 60:
+            print(f"{name1} é idoso")
+        elif idade2 > 60:
+            print(f"{name2} é idoso")
         else:
-            print(f"{name1} é igual a {name2}")
+            print("Ambos não são idosos")
+            if idade1 > idade2:
+                print(f"{name1} é mais velho")
+            elif idade1 < idade2:
+                print(f"{name2} é mais velho")
+            else:
+                print("Ambos tem a mesma idade")
 
     def atividade32():
+        pass
+    
+    def atividade33():
+        pass
+    
+    def atividade34():
+        pass
+    
+    def atividade35():
+        pass
+    
+    def atividade36():
+        pass
+    
+    def atividade37():
+        pass
+    
+    def atividade38():
+        pass
+    
+    def atividade39():
+        pass
+    
+    def atividade40():
         pass
 
 
@@ -463,7 +493,7 @@ print(f"imc: {imc}") """
 primeiraEscolha = int(input("Você quer testar as atividades de 'Atividades' ou meus 'testes pessoais'?\nEscolha 1 para 'Atividades' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
-    choice = int(input("Escolha uma atividade de 1 a 32: "))
+    choice = int(input("Escolha uma atividade de 1 a 40: "))
     if choice == 1:
         variaveis.atividade1()
     elif choice == 2:
@@ -530,6 +560,22 @@ if primeiraEscolha == 1:
         estruturasLogicas.atividade31()
     elif choice == 32:
         estruturasLogicas.atividade32()
+    elif choice == 33:
+        estruturasLogicas.atividade33()
+    elif choice == 34:
+        estruturasLogicas.atividade34()
+    elif choice == 35:
+        estruturasLogicas.atividade35()
+    elif choice == 36:
+        estruturasLogicas.atividade36()
+    elif choice == 37:
+        estruturasLogicas.atividade37()
+    elif choice == 38:
+        estruturasLogicas.atividade38()
+    elif choice == 39:
+        estruturasLogicas.atividade39()
+    elif choice == 40:
+        estruturasLogicas.atividade40()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
