@@ -462,18 +462,49 @@ class estruturasLogicas:
         num2 = int(input("Digite um número: "))
         if num2 < 5 or num2 > 8:
             print("O número não está entre 5 e 8")
+            
+        num3 = int(input("Digite um número: "))
+        if not(num3 >= 5 and num3 <= 8):
+            print("O número não está entre 5 e 8")
 
     def atividade32():
         pass
+        
     
     def atividade33():
-        pass
+        idade = int(input("Digite a idade: "))
+        if idade < 5:
+            print("Suspeito que você não saiba escrever")
+        elif idade >= 5 and idade <= 110:
+            print(f"Ok, você tem {idade} anos")
+        else:
+            print("Isso deve ser um erro")
     
     def atividade34():
-        pass
+        name = input("Digite um nome: ")
+        if name.lower() == "huguinho" or name.lower() == "zezinho" or name.lower() == "luisinho":
+            print("Sobrinho do Pato Donald")
+        elif name.lower() == "chiquinho" or name.lower() == "francisquinho":
+            print("Sobrinho do Mickey Mouse")
     
     def atividade35():
-        pass
+        pontos = float(input("Digite a quantidade de pontos: "))
+        if pontos < 0:
+                print("Impossivel")
+        elif pontos >= 0 and pontos <= 49:
+            print("Falhar")
+        elif pontos >= 50 and pontos <= 59:
+            print(1)
+        elif pontos >= 60 and pontos <= 69:
+            print(2)
+        elif pontos >= 70 and pontos <= 79:
+            print(3)
+        elif pontos >= 80 and pontos <= 89:
+            print(4)
+        elif pontos >= 90 and pontos <= 100:
+            print(5)
+        else:
+            print("Impossivel")
     
     def atividade36():
         pass
