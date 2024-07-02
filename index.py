@@ -1,3 +1,5 @@
+from math import sqrt
+
 class variaveis:
     
     def aulaPrint():
@@ -524,14 +526,61 @@ class estruturasLogicas:
 
 class loops:
     
+    def pratica1():
+        while True:
+            num = int(input("Digite um número: "))
+            if num == -1:
+                break
+            
+            print(num ** 2)
+        print("Programa encerrado")
+
+    def pratica2():
+        while True:
+            codigo = input("Digite um pin: ")
+            
+            if codigo == '1234':
+                break
+            
+            print("Código inválido")
+        print("PIN correto, obrigado")
+    
     def atividade38():
-        pass
+        print("Olá")
+        while True:
+            continuar = input("Deseja continuar? (sim/não): ")
+            if continuar.lower() == "não" or continuar.lower() == "n":
+                break
+            
+            
+        print("Okay, até a próxima")
     
     def atividade39():
-        pass
+        while True:
+            num1 = int(input("Digite um número: "))
+            
+            if num1 < 0:
+                print("Número inválido")
+            elif num1 >= 1:
+                print(f"Raiz quadrada de {num1}: {sqrt(num1)}")
+            else:
+                break
+        
+        print("Fim")
+            
+    
+    
     
     def atividade40():
-        pass
+        numero = 5
+        print("Iniciando")
+        while True:
+            print(numero)
+            numero = numero - 1
+            if numero == 0:
+                break
+        
+        print("Fim")
 
 
 """ altura = float(input("Altura: "))
