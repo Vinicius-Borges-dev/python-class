@@ -631,9 +631,20 @@ class loops:
             if ano % 4 == 0 and ano % 100 != 0:
                 print(f"O próximo ano bissexto é: {ano}")
                 break
+            
+    def pratica4():
+        num = int(input("Digite um número: "))
+        while num <= 10:
+            print(num)
+            num += 1
+            
     
     def atividade44():
-        pass
+        num = 0
+        while num <= 30:
+            num += 1
+            if num % 2 == 0:
+                print(num)
 
     def atividade45():
         pass
