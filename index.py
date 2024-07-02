@@ -586,12 +586,76 @@ class loops:
     def atividade41():
         senha = input("Digite a senha: ")
         while True:
-            confirma_senha = input("Digite a nova senha: ")
+            confirma_senha = input("Digite a senha novamente: ")
             if confirma_senha == senha:
                 break
             print("Senha incorreta")
         
         print("Senhas são iguais")
+        
+    def pratica3():
+        tentativas = 0
+        while True:
+            codigo = input("Por favor, digite seu PIN: ")
+            tentativas += 1
+            if codigo == '1234':
+                sucesso = True
+                break
+            
+            if tentativas == 3:
+                sucesso = False
+                break
+            print("Código inválido, digite novamente")
+            
+        if sucesso:
+            print("PIN correto inserido")
+        else:
+            print("Você excedeu o número de tentativas")
+            
+    def atividade42():
+        tentativas = 0
+        while True:
+            codigo = input("Por favor, digite seu PIN: ")
+            tentativas += 1
+            if codigo == '4321':
+                sucesso = True
+                break
+            
+        print(f"PIN correto inserido\nNúmero de vezes que tentou: {tentativas}")
+        
+    
+    def atividade43():
+        ano = int(input("Digite um ano: "))
+        while True:
+            ano += 1
+            if ano % 4 == 0 and ano % 100 != 0:
+                print(f"O próximo ano bissexto é: {ano}")
+                break
+    
+    def atividade44():
+        pass
+
+    def atividade45():
+        pass
+
+    def atividade46():
+        pass
+
+    def atividade47():
+        pass
+
+    def atividade48():
+        pass
+
+    def atividade49():
+        pass
+
+    def atividade50():
+        pass
+
+    def atividade51():
+        pass
+
 
 
 """ altura = float(input("Altura: "))
@@ -605,7 +669,7 @@ print(f"imc: {imc}") """
 primeiraEscolha = int(input("Você quer testar as atividades de 'Atividades' ou meus 'testes pessoais'?\nEscolha 1 para 'Atividades' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
-    choice = int(input("Escolha uma atividade de 1 a 41: "))
+    choice = int(input("Escolha uma atividade de 1 a 51: "))
     if choice == 1:
         variaveis.atividade1()
     elif choice == 2:
@@ -690,6 +754,26 @@ if primeiraEscolha == 1:
         loops.atividade40()
     elif choice == 41:
         loops.atividade41()
+    elif choice == 42:
+        loops.atividade42()
+    elif choice == 43:
+        loops.atividade43()
+    elif choice == 44:
+        loops.atividade44()
+    elif choice == 45:
+        loops.atividade45()
+    elif choice == 46:
+        loops.atividade46()
+    elif choice == 47:
+        loops.atividade47()
+    elif choice == 48:
+        loops.atividade48()
+    elif choice == 49:
+        loops.atividade49()
+    elif choice == 50:
+        loops.atividade50()
+    elif choice == 51:
+        loops.atividade51()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
