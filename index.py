@@ -522,6 +522,8 @@ class estruturasLogicas:
         else:
             print(f"O ano {ano} não é bissexto")
 
+class loops:
+    
     def atividade38():
         pass
     
@@ -621,11 +623,11 @@ if primeiraEscolha == 1:
     elif choice == 37:
         estruturasLogicas.atividade37()
     elif choice == 38:
-        estruturasLogicas.atividade38()
+        loops.atividade38()
     elif choice == 39:
-        estruturasLogicas.atividade39()
+        loops.atividade39()
     elif choice == 40:
-        estruturasLogicas.atividade40()
+        loops.atividade40()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
