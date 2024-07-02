@@ -581,6 +581,17 @@ class loops:
                 break
         
         print("Fim")
+        
+    
+    def atividade41():
+        senha = input("Digite a senha: ")
+        while True:
+            confirma_senha = input("Digite a nova senha: ")
+            if confirma_senha == senha:
+                break
+            print("Senha incorreta")
+        
+        print("Senhas são iguais")
 
 
 """ altura = float(input("Altura: "))
@@ -594,7 +605,7 @@ print(f"imc: {imc}") """
 primeiraEscolha = int(input("Você quer testar as atividades de 'Atividades' ou meus 'testes pessoais'?\nEscolha 1 para 'Atividades' ou 2 para 'testes pessoais': "))
 
 if primeiraEscolha == 1:
-    choice = int(input("Escolha uma atividade de 1 a 40: "))
+    choice = int(input("Escolha uma atividade de 1 a 41: "))
     if choice == 1:
         variaveis.atividade1()
     elif choice == 2:
@@ -677,6 +688,8 @@ if primeiraEscolha == 1:
         loops.atividade39()
     elif choice == 40:
         loops.atividade40()
+    elif choice == 41:
+        loops.atividade41()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
