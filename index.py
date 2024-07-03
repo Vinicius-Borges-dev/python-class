@@ -656,10 +656,18 @@ class loops:
         print("Agora!")
 
     def atividade46():
-        pass
+        num = int(input("Digite um número: "))
+        count = 0
+        while count <= num:
+            print(count)
+            count += 1
 
     def atividade47():
-        pass
+        limitNum = int(input("Digite um número: "))
+        count = 1
+        while count <= limitNum:
+            print(count)
+            count *= 2
 
     def atividade48():
         pass
