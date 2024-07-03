@@ -647,7 +647,13 @@ class loops:
                 print(num)
 
     def atividade45():
-        pass
+        print("Você está pronto?")
+        numero = int(input("Por favor, digite um número: "))
+        while numero > 0:
+            print(numero)
+            numero -= 1
+
+        print("Agora!")
 
     def atividade46():
         pass
