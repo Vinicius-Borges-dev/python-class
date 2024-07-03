@@ -1,4 +1,6 @@
 from math import sqrt
+import re
+import random
 
 class variaveis:
     
@@ -668,6 +670,11 @@ class loops:
         while count <= limitNum:
             print(count)
             count *= 2
+            
+    def pratica5():
+        print(re.search("[A-Z]", "Senha"))
+        
+        numero_secreto = random.randint(1, 10)
 
     def atividade48():
         pass
