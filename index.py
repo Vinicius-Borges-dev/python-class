@@ -672,7 +672,8 @@ class loops:
             count *= 2
             
     def pratica5():
-        print(re.search("[A-Z]", "Senha"))
+        
+        print(re.search("[A-Z]", "SeNha"))
         
         numero_secreto = random.randint(1, 10)
 
