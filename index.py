@@ -678,8 +678,13 @@ class loops:
         numero_secreto = random.randint(1, 10)
 
     def atividade48():
-        pass
-
+        soma = 0
+        while True:
+            numero = int(input("Digite um número: "))
+            soma = numero + soma
+            if soma == 100:
+                break
+        print()
     def atividade49():
         pass
 
