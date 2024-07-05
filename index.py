@@ -673,30 +673,131 @@ class loops:
             
     def pratica5():
         
-        print(re.search("[A-Z]", "SeNha"))
+        print(re.search(r"[A-Z]", "SeNha"))
         
         numero_secreto = random.randint(1, 10)
 
     def atividade48():
-        soma = 0
-        while True:
-            numero = int(input("Digite um número: "))
-            soma = numero + soma
-            if soma == 100:
-                break
-        print()
+        pass
+
     def atividade49():
         pass
 
     def atividade50():
-        pass
+        soma = 0
+        while soma != 100:
+            numero = int(input("Digite um número: "))
+            soma += numero
+            print(f"Soma: {soma}")
+            if soma == 100:
+                break
+            elif soma > 100:
+                print("Soma maior que 100")
+                break
 
     def atividade51():
-        pass
+        while True:
+            senha = input("Digite uma senha: ")
+            if len(senha) > 8 or re.search("[A-Z]", senha) != None or re.search("[0-9]", senha) != None:
+                break
+        
+        print("Senha válida")
+
+    def atividade52():
+        secret_num = random.randint(1, 100)
+        
+        while True:
+            num = int(input("Digite um número: "))
+            
+            if num == secret_num:
+                print("Você acertou!")
+                break
+            elif num < secret_num:
+                print(f"O número é maior que {num}")
+            else:
+                print(f"O número é menor que {num}")
+                
+    def atividade53():
+        saldo_diponivel = 4000
+        
+        while True:
+            saque = float(input("Digite o valor do saque: "))
+            if saque % 10 == 0 or saque < saldo_disponivel:
+                break
+
+        print("Saque válido")
+
+    def pratica6():
+        palavra = 'Banana'
+        print(palavra*3)
+        
+
+        
+    def atividadePratica():
+        firstString = input("Digite alguma coisa: ")
+        secondString = input("Digite outra coisa: ")
+        
+        maior = firstString
+        while True:
+            if len(maior) < len(secondString):
+                maior = secondString
+            else:
+                break
+            
+        print(f"Maior string: {maior}")
+        
+    def comprimentoDoIndice():
+        palavra = "Abluble"
+        print(palavra[0])
+        print(palavra[1])
+        print(palavra[3])
+        print(f"Último caractere: {palavra[len(palavra) - 1]}") # ou palavra[-1]
+        
+    def atividadePratica2():
+        string = input("Digite alguma coisa: ")
+        
+        if string[2] == string[-2]:
+            print("Segundo e penúltimo caractere são iguais")
+            
 
 
+        #while True:
+            #f string[2] == string[-2]:
+                #break
+        #print("Segundo e penúltimo caractere são iguais")
+        
+    def atividade55():
+        count = int(input("Digite quantas vezes vai aparecer: "))
+        print("#" * count)
+        
+    
+    def atividade56():
+        while string != "":
+            string = input("Digite alguma coisa: ")
+            print(string)
+            print("-" * len(string))
+            
+    def atividade57():
+        string = input("Digite alguma coisa: ")
+        if len(string) < 20:
+            count = 20 - len(string)
+            string = "*" * count + string
 
-""" altura = float(input("Altura: "))
+        print(string)
+
+    def atividade58():
+        string = input("Digite alguma coisa: ")
+        if len(string) < 30:
+            count = (30 - len(string)) / 2
+            string = ("*" * round(count)) + string + ("*" * round(count))
+            if len(string) % 2 != 0 and len(string) < 30:
+                string += "*"
+
+        print(f"{"*" * 30}\n{string}\n{"*" * 30}")
+
+
+"""
+altura = float(input("Altura: "))
 peso =  float(input("peso: "))
 
 imc = peso / (altura ** 2)
@@ -812,6 +913,20 @@ if primeiraEscolha == 1:
         loops.atividade50()
     elif choice == 51:
         loops.atividade51()
+    elif choice == 52:
+        loops.atividade52()
+    elif choice == 53:
+        loops.atividade53()
+    elif choice == 54:
+        loops.atividade54()
+    elif choice == 55:
+        loops.atividade55()
+    elif choice == 56:
+        loops.atividade56()
+    elif choice == 57:
+        loops.atividade57()
+    elif choice == 58:
+        loops.atividade58()
 
 elif primeiraEscolha == 2:
     choice = int(input("Escolha um teste de 1 a 4: "))
