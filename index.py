@@ -364,7 +364,7 @@ class estruturasLogicas:
             print("Use jeans e camiseta")
             print("Recomendo um casaco")
 
-        if chuva == 'sim':
+        if chuva.lower() == 'sim':
             print("Recomendo um guarda-chuva")
 
     def atividade25():
@@ -729,7 +729,7 @@ class loops:
 
     def pratica6():
         palavra = 'Banana'
-        print(palavra*3)
+        princleart(palavra*3)
         
 
         
@@ -794,15 +794,16 @@ class loops:
                 string += "*"
 
         print(f"{"*" * 30}\n{string}\n{"*" * 30}")
+        
+    def loopAninhamdo():
+        while True:
+            num: int = int(input("Digite um número: "))
+            if num == 1: break
+        while numero > 0:
+            print(numero)
+            numero -= 1
+            
 
-
-"""
-altura = float(input("Altura: "))
-peso =  float(input("peso: "))
-
-imc = peso / (altura ** 2)
-
-print(f"imc: {imc}") """
 
 
 primeiraEscolha = int(input("Você quer testar as atividades de 'Atividades' ou meus 'testes pessoais'?\nEscolha 1 para 'Atividades' ou 2 para 'testes pessoais': "))
