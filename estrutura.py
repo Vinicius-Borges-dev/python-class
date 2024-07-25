@@ -22,18 +22,18 @@ def atividade1():
 def printa_varias_vezes(text, vezes):
     print(text*vezes)
 
-def atividade2():
-    tamanho = int(input("Digite o tamanho do quadrado: "))
+def atividade3():
+    
     def quadrado_hashtag(tamanho):
         count = 1
         while True:
-            print('#' * tamanho)
+            print('# ' * tamanho)
             if count == tamanho: break
             count += 1
             
-    quadrado_hashtag(tamanho)
+    quadrado_hashtag(4)
 
-def atividade3():
+def atividade4():
     tamanho = int(input("Digite o tamanho do quadrado: "))
     def mesaXadrez(tamanho):
         x = 0
@@ -49,5 +49,68 @@ def atividade3():
             x += 1
             
     mesaXadrez(tamanho)
+    
 
-atividade3()
+def atividade5():
+
+    def quadradoString(text, num):
+        """ lineCounter = 0
+        lineContent = ''
+        caracterCounter = 0
+
+        while lineCounter < num:
+            
+            while len(lineContent) < num:
+                lineContent += text[caracterCounter]
+                if caracterCounter == len(text) - 1:
+                    caracterCounter = 0
+                else:
+                    caracterCounter += 1
+
+            print(lineContent)
+            lineContent = lineContent[caracterCounter - (caracterCounter + 1)]
+            
+            lineContent= lineContent[1:]
+            lineCounter += 1 """
+            
+        lineCounter = 0
+        coluna = 0
+        linha = 0 
+        while linha < num:
+            while coluna < num:
+                print(text[lineCounter], end='')
+                lineCounter += 1
+                coluna += 1
+                
+                if lineCounter == len(text):
+                    lineCounter = 0
+                    
+            print()
+            coluna = 0
+            linha += 1
+                
+
+    quadradoString("Ramalho", 6)
+
+atividade5()
+
+
+
+def linha(num, text):
+    if text == '':
+        print('* ' * num)
+    else:
+        print(text[0] * num)
+
+
+def atividade7():
+
+    def caixa_de_hashtag(altura):
+        count = 0
+        while count < altura:
+            linha(10, '')
+            count += 1
+            
+    caixa_de_hashtag(8)
+    
+""" atividade7() """
