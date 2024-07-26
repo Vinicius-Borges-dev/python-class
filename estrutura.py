@@ -92,7 +92,7 @@ def atividade5():
 
     quadradoString("Ramalho", 6)
 
-atividade5()
+""" atividade5() """
 
 
 
@@ -114,3 +114,46 @@ def atividade7():
     caixa_de_hashtag(8)
     
 """ atividade7() """
+
+def atividade8():
+    
+    def triangulo(tamanho):
+        
+        rowCount = 0
+        colCount = 0
+        text= ''
+        while rowCount < tamanho:
+            while colCount < tamanho:
+                text += '#'
+                print(text)
+                colCount += 1
+            rowCount += 1           
+    triangulo(8)
+
+""" atividade8() """
+
+""" Uso de return """
+def atividade9():
+    
+    def o_maior_numero(a,b,c):
+        return max(a, b, c)
+        
+    print(o_maior_numero(10, 554, 8))
+    
+""" atividade9() """
+
+def atividade10():
+    
+    def mesmo_caracter(text, num1, num2):
+        if num1 >= len(text) or num2 >= len(text):
+            return False
+        elif text[num1] == text[num2]:
+            return True
+        else:
+            return False
+        
+        
+        
+    print(mesmo_caracter("Abluble", 5, 7))
+
+""" atividade10() """
