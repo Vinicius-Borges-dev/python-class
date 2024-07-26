@@ -1,5 +1,4 @@
 class lista:
-    
     def pratica():
         lista = [1,2,3,4,5]
         while True:
@@ -13,7 +12,7 @@ class lista:
                 
             lista[indice] = novoValor
             print(f"Nova lista: {lista}")
-    
+
     def pratica2():
         num = int(input("Quantos itens serão adicionados: "))
         lista = []
@@ -22,7 +21,7 @@ class lista:
             lista.append(item)
             
         print(f"Novo lista: {lista}")
-        
+
     def pratica3():
         
         lista = [1]
@@ -45,7 +44,7 @@ class lista:
                     print("A lista está vazia.")
             elif operacao == '':
                 break
-                
+
         def classifcacao():
             def teste1():
                 minha_lista = [2, 5, 1, 2, 3]
@@ -57,7 +56,7 @@ class lista:
                 em_ordem = sorted(original)
                 print(em_ordem)
                 print(original)
-                
+
         def pratica4():
             lista = []
             
@@ -68,8 +67,34 @@ class lista:
                 lista.append(valores)
                 print(f"Lista normal: {lista}")
                 print(f"Lista ordenada: {sorted(lista)}")
-            
-            
+
+    def maxMinSum():
+        minha_lista = [2, 5, 1, 2, 2]
+        
+        maior = max(minha_lista)
+        menor = min(minha_lista)
+        soma_lista = sum(minha_lista)
+        
+    def pratica5():
+        show_tamanhao = [45, 44, 36, 39, 40]
+        def mediana(minha_lista: list):
+            ordenada = sorted(minha_lista)
+            centro_lsta = len(ordenada) // 2
+            return ordenada[centro_lsta]
+        print(f"A mediana é: {mediana(show_tamanhao)}")
+        
+        idades = [1, 56, 34, 27, 5, 77, 5]
+        print(f"A mediana das idades: {mediana(idades)}")
+    
+    def pratica6():
+        def entrada_numero():
+            while True:
+                entrada_usuario = input("Por favor, digite um número inteiro, deixe em branco sair: ")
+                if len(entrada_usuario) == 0:
+                    break
+                numeros.append(int(entrada_usuario))
+            return numeros
+    
     def atividade1():
         pass
 
