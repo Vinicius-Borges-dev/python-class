@@ -2,6 +2,7 @@ from math import sqrt
 import re
 import random
 
+import lista
 class variaveis:
     
     def aulaPrint():
@@ -939,3 +940,5 @@ elif primeiraEscolha == 2:
         testesPessoais.atividade3()
     elif choice == 4:
         testesPessoais.atividade4()
+        
+        
