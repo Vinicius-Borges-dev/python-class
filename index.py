@@ -4,13 +4,6 @@ from estruturasLogicas import estruturasLogicas
 from loops import loops
 from estrutura import estrutura
 
-# Variaveis
-# Operadores
-# Tests
-# Estruturas lógicas
-# Loops
-# Estrutura
-
 firstChoice = int(input("1 - variaveis\n2 - operadores\n3 - estruturas lógicas\n4 - loops\n5 - estrutura\nEscolha uma opção: "))
 
 match firstChoice:
