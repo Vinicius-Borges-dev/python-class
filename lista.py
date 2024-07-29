@@ -114,6 +114,16 @@ class lista:
         def range(lista: list[int]):
             return max(lista) - min(lista)
     
+    def pratica8():
+        text = input("Digite um texto: ")
+        for i in text:
+            print(i, end='*')
+    
+    def pratica9():
+        num: int = int(input("Digite um número: "))
+        for i in range(-num, num + 1):
+            if i == 0: continue
+            print(i)
     
     def atividade3():
         pass
