@@ -3,8 +3,9 @@ from operadores import operadores
 from estruturasLogicas import estruturasLogicas
 from loops import loops
 from estrutura import estrutura
+from lista import lista
 
-firstChoice = int(input("1 - variaveis\n2 - operadores\n3 - estruturas lógicas\n4 - loops\n5 - estrutura\nEscolha uma opção: "))
+firstChoice = int(input("1 - variaveis\n2 - operadores\n3 - estruturas lógicas\n4 - loops\n5 - estrutura\n6 - lista\nEscolha uma opção: "))
 
 match firstChoice:
     case 1:
@@ -150,3 +151,9 @@ match firstChoice:
                 estrutura.atividade9()
             case 10:
                 estrutura.atividade10()
+    case 6:
+        choice = int(input("Escolha atividades de 1 a 11: "))
+        match choice:
+            case 1:
+                lista.pratica6()
+            

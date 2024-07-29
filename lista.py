@@ -87,18 +87,60 @@ class lista:
         print(f"A mediana das idades: {mediana(idades)}")
     
     def pratica6():
-        def entrada_numero():
-            while True:
-                entrada_usuario = input("Por favor, digite um número inteiro, deixe em branco sair: ")
-                if len(entrada_usuario) == 0:
-                    break
-                numeros.append(int(entrada_usuario))
-            return numeros
+        numeros =[]
+        while True:
+            entrada_usuario = input("Por favor, digite um número inteiro, deixe em branco sair: ")
+            if len(entrada_usuario) == 0:
+                break
+            numeros.append(int(entrada_usuario))
+        print(numeros)
+    
+    def pratica7():
+        
+        def tamanho(lista):
+            return len(lista)
+        
+        lista = [1, 2, 3, 4, 5]
+        
+        tamanho(lista)
     
     def atividade1():
-        pass
+
+        def media(lista: list[int]):
+            return sum(lista) / len(lista)
 
     def atividade2():
+        
+        def range(lista: list[int]):
+            return max(lista) - min(lista)
+    
+    
+    def atividade3():
         pass
 
-lista.pratica4()
+    def atividade4():
+        pass
+
+    def atividade5():
+        pass
+
+    def atividade6():
+        pass
+
+    def atividade7():
+        pass
+
+    def atividade8():
+        pass
+
+    def atividade9():
+        pass
+
+    def atividade10():
+        pass
+
+    def atividade11():
+        pass
+
+    def atividade12():
+        pass
