@@ -85,7 +85,7 @@ class lista:
         
         idades = [1, 56, 34, 27, 5, 77, 5]
         print(f"A mediana das idades: {mediana(idades)}")
-    
+
     def pratica6():
         numeros =[]
         while True:
@@ -94,7 +94,7 @@ class lista:
                 break
             numeros.append(int(entrada_usuario))
         print(numeros)
-    
+
     def pratica7():
         
         def tamanho(lista):
@@ -103,7 +103,7 @@ class lista:
         lista = [1, 2, 3, 4, 5]
         
         tamanho(lista)
-    
+
     def atividade1():
 
         def media(lista: list[int]):
@@ -113,23 +113,33 @@ class lista:
         
         def range(lista: list[int]):
             return max(lista) - min(lista)
-    
+
     def pratica8():
         text = input("Digite um texto: ")
         for i in text:
             print(i, end='*')
-    
+
     def pratica9():
         num: int = int(input("Digite um número: "))
         for i in range(-num, num + 1):
             if i == 0: continue
             print(i)
-    
+
+    def pratica10():
+        pass
+
     def atividade3():
         pass
 
     def atividade4():
-        pass
+        
+        def lista_estrelas(lita: list[int]):
+            for i in lista:
+                print(i * '*')
+                    
+        lista = [3, 7, 1]
+        lista_estrelas(lista)
+            
 
     def atividade5():
         pass

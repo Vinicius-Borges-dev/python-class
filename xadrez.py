@@ -8,3 +8,4 @@ while lineCounter <= 8:
     while colCounter <= 8:
         print("0")
     print()
+    
