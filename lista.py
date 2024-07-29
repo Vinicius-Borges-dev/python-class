@@ -133,16 +133,21 @@ class lista:
 
     def atividade4():
         
-        def lista_estrelas(lita: list[int]):
+        def lista_estrelas(lista: list[int]):
             for i in lista:
                 print(i * '*')
                     
-        lista = [3, 7, 1]
+        lista = [3, 1, 1, 8]
         lista_estrelas(lista)
             
 
     def atividade5():
-        pass
+        
+        def anagrama(text1, text2):
+            return sorted(text1) == sorted(text2)
+    
+        print(anagrama("abc","cbaa"))
+            
 
     def atividade6():
         pass
