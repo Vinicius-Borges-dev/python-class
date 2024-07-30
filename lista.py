@@ -150,7 +150,16 @@ class lista:
             
 
     def atividade6():
-        pass
+        
+        def soma_positivo(lista):
+            soma = 0
+            for i in lista:
+                if i > 0:
+                    soma += i
+            return soma
+        lista = [3, 1, -1]
+        
+        print(soma_positivo(lista))
 
     def atividade7():
         pass
