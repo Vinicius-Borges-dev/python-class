@@ -221,6 +221,85 @@ class lista:
         sem_vogal("banana")
                     
 
+    def listasAninhadas():
+        lista = [[1,2,3],[4,5,6],[7,8,9]]
+        print(lista[1][2])
+        
+        pessoas = [["betty", 20, 1.60], ["John", 35, 1.75]]
+        
+        for pessoas in pessoas:
+            nome =  pessoa[0]
+            idade = pessoa[1]
+            altura = pessoa[2]
+    
+    def xadrez():
+        xadrez = []
+        linha = 0
+        coluna = 0
+        
+        while linha < 9:
+            xadrez.append([])
+            while coluna < 9:
+                if (linha + coluna) % 2 == 0:
+                    xadrez[linha].append(1)
+                else:
+                    xadrez[linha].append(0)
+                coluna += 1
+            coluna = 0
+            linha += 1
+        
+        for linha in xadrez:
+            print(linha)
+            
+        print()
+        
+        while True:
+            choiceRow = int(input("Escolha a posição da linha de 0 a 8: "))
+            choiceCol = int(input("Escolha a posição da coluna de 0 a 8: "))
+            
+            if choiceRow == '' or choiceCol == '': break
+            
+            xadrez[choiceRow][choiceCol] = "#"
+            
+            for linha in xadrez:
+                print(linha)
+            
+            print()
+            
+    def pratica11():
+        
+        def conta_elementos_match(lista, elemento):
+            quantasVezes = 0
+            for linha in lista:
+                quantasVezes += linha.count(elemento)
+            
+            return quantasVezes
+            
+        lista = [[1,5,3],[5,5,6],[5,8,9]]
+        elemento = 5
+        print(conta_elementos_match(lista, elemento))
+        
+        
+    def pratica12():
+        sudoku = [
+    [9, 0, 0, 0, 8, 0, 3, 0, 0],
+    [0, 0, 0, 2, 5, 0, 7, 0, 0],
+    [0, 2, 0, 3, 0, 0, 0, 0, 4],
+    [0, 9, 4, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 7, 3, 0, 5, 6, 0],
+    [7, 0, 5, 0, 6, 0, 4, 0, 0],
+    [0, 0, 7, 8, 0, 3, 9, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 3],
+    [3, 0, 0, 0, 0, 0, 0, 0, 2]
+    ]
+        for linha in sudoku:            
+            for i in range(len(linha)):
+                if linha[i] == 0:
+                    print("_", end=' ')
+                else:
+                    print(linha[i], end=' ')
+            print()                  
+
     def atividade10():
         pass
 
