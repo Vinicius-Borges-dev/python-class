@@ -211,7 +211,15 @@ class lista:
         mais_caracteres(text)
 
     def atividade9():
-        pass
+        
+        def sem_vogal(text):
+            vogais = ["a", "e", "i", "o", "u"]
+            for i in text:
+                if vogais.count(i) == 0:
+                    print(i, end='')
+                
+        sem_vogal("banana")
+                    
 
     def atividade10():
         pass
