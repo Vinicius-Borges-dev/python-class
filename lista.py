@@ -234,12 +234,15 @@ class lista:
     
     def xadrez():
         xadrez = []
+        linhaExterna = 0
+        colunaExterna = 0
+        
         linha = 0
         coluna = 0
         
-        while linha < 9:
+        while linha <= 8:
             xadrez.append([])
-            while coluna < 9:
+            while coluna <= 8:
                 if (linha + coluna) % 2 == 0:
                     xadrez[linha].append(1)
                 else:
@@ -247,24 +250,35 @@ class lista:
                 coluna += 1
             coluna = 0
             linha += 1
+
+        print(" ",end="")
+        while linhaExterna <= 8:
+            print(linhaExterna, end="  ")
+            linhaExterna += 1
+        print()
         
         for linha in xadrez:
             print(linha)
             
         print()
         
-        while True:
+        
+        """ while True:
+                
             choiceRow = int(input("Escolha a posição da linha de 0 a 8: "))
             choiceCol = int(input("Escolha a posição da coluna de 0 a 8: "))
             
             if choiceRow == '' or choiceCol == '': break
+            if choiceRow < 0 or choiceRow > 8 or choiceCol < 0 or choiceCol > 8:
+                print("Posição inválida.")
+                continue
             
             xadrez[choiceRow][choiceCol] = "#"
             
             for linha in xadrez:
                 print(linha)
             
-            print()
+            print() """
             
     def pratica11():
         

@@ -1,4 +1,4 @@
-def criarSudoku():
+def createSudoku():
     sudoku = []
     for linha in range(9):
         sudoku.append([])
@@ -6,7 +6,9 @@ def criarSudoku():
             sudoku[linha].append("+")
     return sudoku
 
-    for linha in criarSudoku():
+def fillSudoku():
+    sudoku = createSudoku()
+    for linha in sudoku:
         print(linha)
 
-print(criarSudoku())
+fillSudoku()
