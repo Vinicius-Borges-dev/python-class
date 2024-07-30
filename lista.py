@@ -125,9 +125,6 @@ class lista:
             if i == 0: continue
             print(i)
 
-    def pratica10():
-        pass
-
     def atividade3():
         pass
 
@@ -149,6 +146,8 @@ class lista:
         print(anagrama("abc","cbaa"))
             
 
+
+
     def atividade6():
         
         def soma_positivo(lista):
@@ -162,10 +161,54 @@ class lista:
         print(soma_positivo(lista))
 
     def atividade7():
-        pass
+        
+        def numeros_pares(lista):
+            pares = []
+            for i in lista:
+                if i % 2 == 0:
+                    pares.append(i)
+            return pares
+        
+        lista = [7,9,15,897,2413,6687]
+        print(f"Números pares: {numeros_pares(lista)}")
 
     def atividade8():
-        pass
+        
+        def lista_soma(lista1, lista2):
+            soma = []
+            for i in range(len(lista1)):
+                soma.append(lista1[i] + lista2[i])
+            return soma
+        
+        lista1 = [1, 2, 3]
+        lista2 = [4, 5, 6]
+        print(lista_soma(lista1, lista2))
+        
+    def metodoCOunt():
+        text = 'kdljsdlfkjdlfkjsdlkfjdslf'
+        print(text.count('fk'))
+        
+        newText = 'oi'
+        modifiedText = text.replace('oi', 'olá')
+
+    def pratica10():
+        def mais_caracteres(text):
+            letras = []
+            LetraMaisCaracteres = ''
+            quantidadeCaracteres = 0
+            for i in range(len(text)):
+                letras.append(text[i])
+            
+            for j in range(len(letras)):
+                if text.count(letras[j]) > quantidadeCaracteres:
+                    LetraMaisCaracteres = letras[j]
+                    quantidadeCaracteres = text.count(letras[j])
+                
+                
+            print(f"Letra com mais caracteres: {LetraMaisCaracteres} : {quantidadeCaracteres}")
+            
+        text = 'lkfjdslaaaaaaf'
+        mais_caracteres(text)
 
     def atividade9():
         pass
