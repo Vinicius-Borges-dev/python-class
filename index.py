@@ -155,5 +155,5 @@ match firstChoice:
         choice = int(input("Escolha atividades de 1 a 11: "))
         match choice:
             case 1:
-                lista.xadrez()
+                lista.sudoku()
             

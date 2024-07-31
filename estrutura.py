@@ -172,5 +172,3 @@ class estrutura:
         firstIndex = int(input("Digite o indice do primeiro teste: "))
         SecondIndex = int(input("Digite o indice do segundo teste: "))
         print(f"Texto: {text}\nOs caracteres escolhidos são iguais? Resposta: {mesmo_caracter(text, firstIndex, SecondIndex)}")
-
-
