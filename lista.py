@@ -246,9 +246,9 @@ class lista:
             linha = 0
             coluna = 0
 
-            while linha <= 8:
+            while linha <= 6:
                 sudoku.append([])
-                while coluna <= 8:
+                while coluna <= 6:
                     sudoku[linha].append("+")
                     coluna += 1
                 coluna = 0
@@ -260,16 +260,17 @@ class lista:
                         return False
                     if sudoku[item][coluna] == numero:
                         return False
+                    
                 return True
 
             for linha in range(len(sudoku)):
                 for coluna in range(len(sudoku)):
-                    if sudoku[linha][coluna] == "+":
-                        while True:
-                            RandomNumber = str(random.randint(1, 9))
-                            if validaSudoku(sudoku, linha, coluna, RandomNumber):
-                                sudoku[linha][coluna] = RandomNumber
-                                break
+                    while True:
+                        
+                        RandomNumber = str(random.randint(1, 9))
+                        if validaSudoku(sudoku, linha, coluna, RandomNumber) == True:
+                            sudoku[linha][coluna] = RandomNumber
+                            break
 
             return sudoku
 
@@ -293,7 +294,7 @@ class lista:
 
         printSudoku(sudoku)
 
-        """ while True:
+        while True:
                 
             choiceRow = int(input("Escolha a posição a linha de 0 a 8: "))
             choiceCol = int(input("Escolha a posição a coluna de 0 a 8: "))
@@ -309,7 +310,7 @@ class lista:
             sudoku[choiceCol][choiceRow] = newNumber
             
             printSudoku(sudoku)
-             """
+            
 
     def pratica11():
 
@@ -345,7 +346,86 @@ class lista:
             print()
 
     def atividade10():
-        pass
+        def createGridVelha():
+            gradeVelha = []
+
+            linha = 0
+            coluna = 0
+
+            while linha <= 2:
+                gradeVelha.append([])
+                while coluna <= 2:
+                    gradeVelha[linha].append("+")
+                    coluna += 1
+                coluna = 0
+                linha += 1
+            return gradeVelha
+        
+        def printGridVelha(grid):
+            linhaExterna = 0
+            colunaExterna = 0
+            print("    ", end="")
+            while linhaExterna <= 2:
+                print(linhaExterna, end="    ")
+                linhaExterna += 1
+            print()
+
+            for linha in grid:
+                print(f"{colunaExterna} {linha}")
+                colunaExterna += 1
+                print()
+
+            print()
+            
+        grid = createGridVelha()
+        printGridVelha(grid)
+        
+        winner = ''
+        while True:
+                
+            choiceRow = int(input("Escolha a posição a linha de 0 a 2: "))
+            choiceCol = int(input("Escolha a posição a coluna de 0 a 2: "))
+            
+            if choiceRow == '' or choiceCol == '': break
+            if choiceRow < 0 or choiceRow > 2 or choiceCol < 0 or choiceCol > 2:
+                print("Posição inválida.")
+                break
+            
+            newSimbol = input("Escolha o simbolo a ser colocado: ")
+            
+            
+            grid[choiceCol][choiceRow] = newSimbol
+            
+            printGridVelha(grid)
+            for linha in grid:
+                if linha.count("x") == 3:
+                    winner = 'x'
+                elif linha.count("o") == 3:
+                    winner = 'o'
+                else:
+                    winner = 'empate'
+
+            acertos = 0
+            for i in range(len(grid)):
+                if grid[i][choiceRow] == newSimbol:
+                    acertos += 1
+                
+            if acertos == 3:
+                print(newSimbol)
+                winner = newSimbol
+                
+            if grid[0][0] == grid[1][1] and grid[1][1] == grid[2][2]:
+                winner = grid[0][0]
+            elif grid[0][2] == grid[1][1] and grid[1][1] == grid[2][0]:
+                winner = grid[0][2]
+
+
+            if winner == 'x':
+                print("Jogador x ganhou")
+                break
+            elif winner == 'o':
+                print("Jogador o ganhou")
+                break
 
     def atividade11():
         pass

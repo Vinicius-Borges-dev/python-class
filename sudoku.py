@@ -1,14 +1,11 @@
 def createSudoku():
-    sudoku = []
-    for linha in range(9):
-        sudoku.append([])
-        for coluna in range(9):
-            sudoku[linha].append("+")
-    return sudoku
-
-def fillSudoku():
-    sudoku = createSudoku()
-    for linha in sudoku:
-        print(linha)
+    for i in range(3):
+            matrizMae.append([])
+            for j in range(3):
+                matrizMae[i].append([])
+                for k in range(3):
+                    matrizMae[i][j].append([])
+                    for l in range(3):
+                        matrizMae[i][j][k].append(0)
 
 fillSudoku()
